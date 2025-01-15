@@ -29,23 +29,22 @@ function App() {
 
   return (
     <>
-      <div>
-        <form className={styles.form} onSubmit={HandleRegister}>
-          <input
-            className={styles.textbox}
-            placeholder="DIgite seu nome:"
-            type="text"
-            ref={nameRef}
-          />
-          <input
-            className={styles.textbox}
-            placeholder="DIgite seu cargo:"
-            type="text"
-            ref={cargoRef}
-          />
-          <input className={styles.button} type="submit" value="Cadastrar" />
-        </form>
-
+      <form className={styles.form} onSubmit={HandleRegister}>
+        <input
+          className={styles.textbox}
+          placeholder="DIgite seu nome:"
+          type="text"
+          ref={nameRef}
+        />
+        <input
+          className={styles.textbox}
+          placeholder="DIgite seu cargo:"
+          type="text"
+          ref={cargoRef}
+        />
+        <input className={styles.button} type="submit" value="Cadastrar" />
+      </form>
+      <div className={styles.components}>
         {funcionarios.map((funcionarios: FuncionarioProps) => (
           <div key={funcionarios.name}>
             <p>{funcionarios.name}</p>
