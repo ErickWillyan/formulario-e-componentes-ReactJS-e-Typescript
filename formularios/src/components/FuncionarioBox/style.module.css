@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 250px;
+  align-items: center;
+  width: 45%;
+  border-radius: 5px;
+  box-shadow: #a9a9a9 3px 1px 5px;
+}
+
+.container p {
+  margin: 10px;
+  font-size: 1.1rem;
+}
+
+.infoBox {
+  padding-left: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.funcao {
+  font-weight: 700;
+  color: #808080;
+}
+
+.dado {
+  color: #a9a9a9;
+}

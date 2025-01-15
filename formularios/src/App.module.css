@@ -8,6 +8,7 @@
 .form {
   display: flex;
   flex-wrap: wrap;
+  min-width: 300px;
   margin: auto;
   width: 15%;
   border: 1px solid black;
@@ -33,8 +34,20 @@
 }
 
 .components {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  max-width: 600px;
+  margin: 20px auto;
+  gap: 20px;
+  /* justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; */
+}
+
+.title {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  font-size: 1.5rem;
   width: 100%;
 }
